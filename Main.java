@@ -1,8 +1,6 @@
-import java.util.*;
-
 public class Main {
     public static void main (String[] args){
-        int a = 206456;
+        int a = 56789;
         int d ,e=0,o=0;
         while(a != 0 )
             {
@@ -15,7 +13,7 @@ public class Main {
             o++;
          a = a / 10;
         }
-        System.out.println("ODD:" +0);
+        System.out.println("ODD:" +o);
         System.out.println("EVEN:" +e);
        
     }

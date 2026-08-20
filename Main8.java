@@ -1,4 +1,4 @@
-public class Main8 {
+/*public class Main8 {
     public static void main(String[] args){
           int count1 = 0;
         int count2 = 0;
@@ -23,5 +23,30 @@ public class Main8 {
         System.out.println("Lowercase letters: " + count4);
         System.out.println("Digits: " + count2);
         System.out.println("Special characters: " + count3);
+    }
+}
+*/
+public class Main8 {
+    public static void main(String[] args) {
+
+        String a = "HelloJjcb45@##$";
+
+        int upper = 0, lower = 0, digit = 0, special = 0;
+
+        for (char x : a.toCharArray()) {        
+            if (Character.isUpperCase(x))
+                upper++;
+            else if (Character.isLowerCase(x))
+                lower++;
+            else if (Character.isDigit(x))
+                digit++;
+            else
+                special++;
+        }
+
+        System.out.println("Uppercase: " + upper);
+        System.out.println("Lowercase: " + lower);
+        System.out.println("Digits: " + digit);
+        System.out.println("Special: " + special);
     }
 }
